@@ -1,0 +1,66 @@
+#serviceNav:hover #serviceMenu{
+    display: block !important;
+}
+.expandNav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #232323;
+    padding: 20px;
+    display: block !important;
+    padding-top: 50px;
+    animation: expandNavAnimation .1s;
+    animation-iteration-count: 1;  
+}
+
+@keyframes expandNavAnimation {
+    0% {
+        transform: scaleX(0.01);
+        transform-origin: left;
+    }
+
+    100% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+
+.home{
+    background-image: url(../img/wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services{
+    background-image: url(../img/wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    margin: auto;
+    padding: 0px 30px;
+    overflow: hidden;
+}
+
+.subSerOne{
+    background-image: url(../img/serviceImg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subSerFour{
+    background-image: url(../img/subSerFour.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-[#12110F] text-white px-6 sticky top-0 w-full">
+      <div class="container mx-auto px-5">
+        <div class="flex justify-between items-center">
+          <a
+            href="tel:240-437-2942"
+            class="text-[#FFB703] font-bold text-sm py-2"
+          >
+            RAPID ROADSIDE ASSISTANCE | 240-437-2942
+          </a>
+          <nav id="navigation" class="hidden lg:block">
+            <ul class="lg:flex">
+              <li
+                class="px-3 py-2 lg:py-8 text-sm hover:text-[#FFB703] text-[#FFB703]"
+              >
+                <a href="./index.html">Home</a>
+              </li>
+              <li
+                id="serviceNav"
+                class="px-3 py-2 lg:py-8 text-sm hover:text-[#FFB703]"
+              >
+                <a href="./services.html" class="w-full">Services </a>
+
+                <ul
+                  id="serviceMenu"
+                  class="hidden my-3 lg:my-0 lg:absolute lg:top-[82px] lg:-ml-14 p-3 lg:bg-black shadow rounded-sm pb-0"
+                >
+                  <li
+                    class="text-sm lg:hover:text-[#FEC226] transition-all ease-in-out cursor-pointer py-2 text-white text-right"
+                  >
+                    <a href="./tire-change-tire-repair-instant-ser.html">
+                      <span class="lg:hidden"> - </span>
+                      Tire Change | Tire Repair
+                    </a>
+                  </li>
+                  <li
+                    class="text-sm lg:hover:text-[#FEC226] transition-all ease-in-out cursor-pointer py-2 text-white text-right"
+                  >
+                    <a href="./local-jump-start-battery-replacemen.html">
+                      <span class="lg:hidden"> - </span>
+                      Jump Start & Battery Delivery
+                    </a>
+                  </li>
+                  <li
+                    class="text-sm lg:hover:text-[#FEC226] transition-all ease-in-out cursor-pointer py-2 text-white text-right"
+                  >
+                    <a href="./car-lockout-affordable-instant-road.html">
+                      <span class="lg:hidden"> - </span>
+                      Car Lockout | Locksmith
+                    </a>
+                  </li>
+                  <li
+                    class="text-sm lg:hover:text-[#FEC226] transition-all ease-in-out cursor-pointer py-2 text-white text-right"
+                  >
+                    <a href="./fuel-delivery-gas-delivery-assistan.html">
+                      <span class="lg:hidden"> - </span>
+                      Fuel Delivery
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="px-3 py-2 lg:py-8 text-sm hover:text-[#FFB703]">
+                <a href="./pricing.html">Pricing</a>
+              </li>
+              <li class="px-3 py-2 lg:py-8 text-sm hover:text-[#FFB703]">
+                <a href="./location.html">Our Location</a>
+              </li>
+              <li class="px-3 py-2 lg:py-8 text-sm hover:text-[#FFB703]">
+                <a href="./about.html">About</a>
+              </li>
+              <li class="px-3 py-2 lg:py-8 text-sm hover:text-[#FFB703]">
+                <a href="./jobs.html">Jobs</a>
+              </li>
+              <li class="px-3 py-2 lg:py-8 text-sm hover:text-[#FFB703]">
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+            <i
+              onclick="removeExpandNav()"
+              class="fa-solid fa-close lg:hidden my-5 text-3xl cursor-pointer absolute right-3 top-0"
+            ></i>
+          </nav>
+          <i
+            onclick="expandNav()"
+            class="fa-solid fa-bars lg:hidden ml-5 my-5 text-2xl cursor-pointer"
+          ></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- SubService 01 Section  -->
+
+    <section class="bg-[#FFB703] mb-8 py-24">
+      <div class="container">
+        <div class="subSerOne">
+          <div class="bg-black text-white p-8 w-auto lg:w-[50%] m-5 sm:m-14">
+            <h1 class="text-2xl md:text-6xl font-bold text-[#E85607]">
+              Tire Repair Services
+            </h1>
+            <h1 class="text-[#FFB703] text-4xl font-bold my-2">
+              ALL SERVICES AVAILABLE 24/7*
+            </h1>
+            <p class="text-right font-semibold text-[#FFB703]">
+              *prices dependent on vehicle and location
+            </p>
+            <ul class="text-4xl font-bold">
+              <li class="my-2 flex items-center">
+                <div class="w-[20px] h-[20px] mr-5 bg-white rounded-full"></div>
+                MOBILE TIRE CHANGE
+              </li>
+              <li class="my-2 flex items-center">
+                <div class="w-[20px] h-[20px] mr-5 bg-white rounded-full"></div>
+                MOBILE TIRE REPAIR
+              </li>
+              <li class="my-2 flex items-center">
+                <div class="w-[20px] h-[20px] mr-5 bg-white rounded-full"></div>
+                MOBILE TIRE REPLACEMENT
+              </li>
+            </ul>
+            <p class="text-lg font-bold my-5">
+              We Repair, Fix, Change And Replace CAR, SUV and TRUCK tires.
+            </p>
+            <a href="./" class="my-2 block text-center text-[#FFB703]">
+              CLICK HERE FOR QUICK QUOTE!
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <div class="text-center border-t border-gray-400">
+      <div class="py-6 bg-black"></div>
+      <p class="text-sm text-gray-500 py-3 bg-white">
+        ©2017 by Rapid Roadside Assistance. Proudly created with Wix.com
+      </p>
+    </div>
+  </body>
+
+  <script>
+    function expandNav() {
+      document.getElementById("navigation").classList.add("expandNav");
+    }
+    function removeExpandNav() {
+      document.getElementById("navigation").classList.remove("expandNav");
+    }
+  </script>
+</html>
